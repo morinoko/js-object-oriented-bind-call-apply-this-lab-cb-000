@@ -12,5 +12,6 @@ function setThisWithApply(functionToInvoke, thisValue, myArguments) {
 }
 
 function returnNewFunctionOf(functionToBeCopied, thisValue) {
-  return functionToBeCopied.bind(thisValue);
+  const copiedFunction = functionToBeCopied.bind(thisValue);
+  return copiedFunction;
 }
