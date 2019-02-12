@@ -1,6 +1,6 @@
 //Your code here
-function justInvoke(function) {
-  return function();
+function justInvoke(functionToInvoke) {
+  return functionToInvoke();
 }
 
 function setThisWithCall(fn, thisValue, arg) {
