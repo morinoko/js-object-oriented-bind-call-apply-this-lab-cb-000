@@ -3,12 +3,12 @@ function justInvoke(functionToInvoke) {
   return functionToInvoke();
 }
 
-function setThisWithCall(functionToInvoke, thisValue, arg) {
-  return functionToInvoke.call(thisValue, arg);
+function setThisWithCall(functionToInvoke, thisValue, myArgument) {
+  return functionToInvoke.call(thisValue, myArgument);
 }
 
-function setThisWithApply(functionToInvoke, thisValue, args) {
-  return functionToInvoke.apply(thisValue, args);
+function setThisWithApply(functionToInvoke, thisValue, myArguments) {
+  return functionToInvoke.apply(thisValue, myArguments);
 }
 
 function returnNewFunctionOf(functionToBeCopied, thisValue) {
